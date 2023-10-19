@@ -1,0 +1,13 @@
+<div class="upload-container">
+    <h2>Fazer upload de um arquivo JSON</h2>
+    <input type="file" (change)="onFileSelected($event)" class="file-input">
+    <div *ngIf="isLoading; else responseBlock" class="loading-indicator">
+        <div class="spinner"></div> <!-- Aqui está o spinner -->
+        Carregando...
+    </div>
+    <ng-template #responseBlock>
+      <div *ngIf="responseText" class="response-message">
+        <p>{{ responseText }}</p>
+      </div>
+    </ng-template>
+  </div>

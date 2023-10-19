@@ -1,0 +1,44 @@
+<div>
+    <h2 class="section-title">Estados e Número de Doadores</h2>
+    <ul class="data-list">
+      <li *ngFor="let data of statesData">
+        {{ data[0] }}: {{ data[1] }}
+      </li>
+    </ul>
+</div>
+
+<div>
+    <h2 class="section-title">IMC por Faixa Etária</h2>
+    <ul class="data-list">
+        <li *ngFor="let imc of imcData">
+            Idade entre {{ imc.start }} até {{ imc.end }}: IMC médio é {{ imc.imc }}
+        </li>
+    </ul>
+</div>
+
+<div>
+    <h2 class="section-title">Porcentagem de Pessoas Obesas</h2>
+    <ul class="data-list">
+        <li *ngFor="let obese of obesePercentageData">
+            Porcentagem de pessoas obesas {{ obese.gender }}: {{ obese.percentage }}%
+        </li>
+    </ul>
+</div>
+
+<div>
+    <h2 class="section-title">Média de Idade por Tipo Sanguíneo</h2>
+    <ul class="data-list">
+        <li *ngFor="let media of mediaAgeData">
+            Tipo sanguíneo {{ media.bloodType }} - Média de idade: {{ media.age }}
+        </li>
+    </ul>
+</div>
+  
+<div>
+    <h2 class="section-title">Possíveis Doadores por Tipo Sanguíneo</h2>
+    <ul class="data-list">
+        <li *ngFor="let key of possibleDonorsData | keyvalue">
+        Tipo sanguíneo {{ key.key }} - Quantidade de possíveis doadores: {{ key.value }}
+        </li>
+    </ul>
+</div>
