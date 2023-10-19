@@ -31,18 +31,17 @@ Implemente um sistema web que receba um JSON com os dados e mostre os seguintes 
 ATENÇÃO: Somente pessoas com idade de 16 a 69 anos e com peso acima de 50 Kg podem doar sangue.
 
 
-╔═══════════════╦═════════════════════╦════════════════════╗
-║ Tipo Sanguíneo║ Pode Receber de     ║ Pode Doar para     ║
-╠═══════════════╬═════════════════════╬════════════════════╣
-║ A+            ║ A+, A-, O+, O-      ║ A+, AB+            ║
-║ A-            ║ A-, O-              ║ A+, A-, AB+, AB-   ║
-║ B+            ║ B+, B-, O+, O-      ║ B+, AB+            ║
-║ B-            ║ B-, O-              ║ B+, B-, AB+, AB-   ║
-║ AB+           ║ Todos               ║ AB+                ║
-║ AB-           ║ AB-, A-, B-, O-     ║ AB+, AB-           ║
-║ O+            ║ O+, O-              ║ A+, B+, AB+, O+    ║
-║ O-            ║ O-                  ║ Todos              ║
-╚═══════════════╩═════════════════════╩════════════════════╝
+| Tipo Sanguíneo | Pode Receber de  | Pode Doar para     |
+| -------------- | ----------------- | ------------------- |
+| A+             | A+, A-, O+, O-   | A+, AB+            |
+| A-             | A-, O-           | A+, A-, AB+, AB-   |
+| B+             | B+, B-, O+, O-   | B+, AB+            |
+| B-             | B-, O-           | B+, B-, AB+, AB-   |
+| AB+            | Todos            | AB+                |
+| AB-            | AB-, A-, B-, O- | AB+, AB-           |
+| O+             | O+, O-           | A+, B+, AB+, O+   |
+| O-             | O-              | Todos              |
+
 
 O sistema deverá ser implementado em java com Spring boot. Para o front-end, utilize preferencialmente Angular e para o banco de dados, MySQL. Caso não tenha condições ou prefira utilizar outras tecnologias para o front-end e para o banco de dados, fique à vontade, mas lembre-se que para avaliarmos, precisaremos executar o programa, portanto, forneça tudo o que for necessário para que possamos executar e testar o sistema em nosso próprio ambiente.
 Poderão ser utilizadas bibliotecas de terceiros, desde que possam ser baixadas automaticamente no nosso ambiente de testes (pelo Maven ou pelo npm).
