@@ -13,3 +13,5 @@ docker-compose up
 
 Acessar:
 http://localhost:80
+
+Na raiz do projeto existe um arquivo input.json que é o template para realizar upload dos dados.
