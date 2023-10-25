@@ -1,0 +1,41 @@
+server:
+  port: 8080
+  error:
+    include-message: always
+
+spring:
+  jackson:
+    mapper:
+      DEFAULT_VIEW_INCLUSION: true
+    serialization:
+      indent_output: true
+      WRITE_DATES_AS_TIMESTAMPS: false
+    deserialization:
+      FAIL_ON_IGNORED_PROPERTIES: false
+      FAIL_ON_UNKNOWN_PROPERTIES: false
+      ACCEPT_SINGLE_VALUE_AS_ARRAY: true
+    default-property-inclusion: non_empty
+
+#  datasource:
+#    url: ${SPRING_DATASOURCE_URL}
+#    username: ${SPRING_DATASOURCE_USERNAME}
+#    password: ${SPRING_DATASOURCE_PASSWORD}
+  datasource:
+    url: jdbc:mysql://database:3306/wktest
+    username: wktest
+    password: wktest
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/wktest
+#    username: root
+#    password: policy2938
+
+  jpa:
+    openInView: false
+    show_sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+
+  data:
+    jpa:
+      repositories.enabled: true
